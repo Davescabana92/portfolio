@@ -1,0 +1,408 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+*/
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/*l'entete des pages*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 70px;
+}
+
+.header .mapersonne{
+    font-weight: bold;
+}
+.header .menu_list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 0;
+    padding: 0;
+    
+}
+.menu_list li{
+    width: 100px;
+    text-align: center;
+    color: black;
+
+}
+a{
+    text-decoration: none;
+}
+.projets,
+.contact{
+    border-left: 1px solid black;
+    
+}
+/*style appliqué au corps de la page index.html*/
+
+.home{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 30px 15% 0;
+    margin: 0%;
+}
+.home-content{
+    max-width: 380px;
+    height: auto;
+    line-height: 1.8;
+
+}
+.home-content h3{
+    font-size: 20px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 0.3;
+}
+
+.home-content span{
+    font-weight: bold;
+}
+
+.home-content p{
+    font-size: 15px;
+    margin: 30px 0 30px;
+}
+#presentation{
+    letter-spacing: 1px;
+}
+.img_box{
+    width: 500px;
+    height: 500px;
+    padding-top: 5%;
+}
+.img_box img{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.img_box img:hover{
+    width: 440px;
+    display: block;
+    height: 440px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid black; 
+}
+
+.btn_box{
+    width: 400px;
+   display: flex;
+   justify-content: space-between;
+   font-size: 17px;
+   margin: 10px;
+   padding: 0;
+   gap: 0;
+}
+.btn_box a{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 0;
+    padding: 0;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    font: bold;
+    font-weight: 1000;
+    transition: 0.3s ease;
+}
+#curric{
+    background-color: rgb(238, 163, 2);
+}
+#proje{
+    background-color: rgb(225, 59, 37);
+}
+#contac{
+    background-color: rgb(128, 216, 218);
+}
+.btn_box a:hover{
+    background-color: rgb(227, 173, 36);
+    color: white;
+    border: 3px solid black;
+    width: 120px;
+    height: 120px;
+}
+
+/*style appliqués aux pieds des pages*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    position: relative;
+    width: auto;
+    border-top: 1px solid rgb(122, 119, 119);
+    margin: 0 10% 0 10%;
+    padding: 0 0 0 0;
+    line-height: 0.9;
+}
+
+.email{
+    color: black;
+}
+
+.copy h5{
+    font-size: 15px;
+}
+
+.social_media a{
+    margin: 5px;
+}
+i{
+    color: black;
+}
+
+/*style apliqué au corps de la page contact*/
+
+.section_container{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    gap: 25em;
+    padding: 30px 15% 0;
+}
+/*style appliqué au formulaire*/
+
+form{
+    width: 600px;
+}
+
+/*style appliqué aux champs de saisie du formulaire*/
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;   
+}
+.field .item{
+    padding: 5px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    margin: 11px 0;
+
+}
+
+/*style appliqué au bouton envoyer*/
+
+button{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(238, 163, 2);
+    border: 2px solid black;
+    margin-right: 0;
+    
+}
+
+#but-envoyer{
+    margin-right: 0;
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    margin-left: 0;
+}
+
+/*style appliqué à la page cv*/
+
+.experience{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+#cv_presentation{
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 0px;
+}
+
+#titre{
+    font-size: 25px;
+}
+
+.experience h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#experience1{
+    line-height: 0.2;
+}
+
+.experience #experience1 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.experience #experience1 h4{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.experience #experience1 span{
+    position: absolute;
+    font-size: 16px;
+    top: 143px;
+    right: 25px;
+}
+
+#experience2{
+    line-height: 0.2;
+}
+
+.experience #experience2 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.experience #experience2 h4{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.experience #experience2 span{
+    position: absolute;
+    font-size: 16px;
+    top: 213px;
+    right: 25px;
+}
+.education{
+    position: relative;
+    border-top: 2px solid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    
+}
+
+.education h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#education1{
+    line-height: 0.2;
+}
+
+.education #education1 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.education #education1 h4{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.education #education1 span{
+    position: absolute;
+    font-size: 16px;
+    top: 144px;
+    right: 25px;
+}
+
+#education2{
+    line-height: 0.2;
+}
+
+.education #education2 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.education #education2 h4{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.education #education2 span{
+    position: absolute;
+    font-size: 16px;
+    top: 213px;
+    right: 25px;
+}
+
+#education3{
+    line-height: 0.2;
+}
+
+.education #education3 h3{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.education #education3 h4{
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+}
+.education #education3 span{
+    position: absolute;
+    font-size: 16px;
+    top: 280px;
+    right: 25px;
+}
+
+.competence{
+    position: relative;
+    border-top: 2px solid;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    
+}
+.competence h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.competence ul{
+   
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 2;
+}
+
+/*style appliqué à la page contact*/
+
+.proj-content{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 50px;
+}
+
+.proj_titre h1{
+    font-size: 30px;
+}
+
+#proj-presentation{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#proj-presentation p{
+    width: 550px;
+    height: 300px;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}

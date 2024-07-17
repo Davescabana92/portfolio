@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Mes Contacts</title>
+</head>
+<body>
+    <header class="header">
+        <!--l'entete de la page avec logo et menu-->
+        <div class="mapersonne">David MUKEBA</div>
+        <nav>
+            <!--le menu de navigation-->
+            <ul class="menu_list">
+                <li class="cv"><a href="cv.html" target="_blank" style="text-decoration:none">CV</a></li>
+                <li class="projets"><a href="projets.html" target="_blank">Projets</a></li>
+                <li class="contact"><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section class="section_container">
+            <div>
+                <!--coordonnées de contact-->
+                <h2>Contact</h2><br>
+                <h4>Telephone</h4>
+                <p>081-740-5210<p>
+                <h4>Email</h4>
+                <p>davescabana@gmail.com</p>
+            </div>
+            <form action="#">
+                <!--formulaire de soumission des requetes et de prise de contact-->
+                <div class="input-box">
+                    <div class="input-field field">
+                        <!--zone de saisi pour le nom-->
+                        <label for="firstname">First Name:</label><br>
+                        <input type="text" placeholder="" id="firstname" class="item" name="firstname">
+                    </div>
+                    <div class="input-field field">
+                        <!--zone de saisi pour le prenom-->
+                        <label for="lastname">Last Name:</label><br>
+                        <input type="text" id="lastname" class="item" name="lastname">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <!--zone de saisi de l'adresse email du client-->
+                        <label for="email">Email:</label><br>
+                        <input type="email" placeholder="" id="email" class="item" name="email">
+                    </div>
+                    <div class="input-field field">
+                        <!--zone de saisi de l'object de la prise de contact-->
+                        <label for="subject">Subject:</label><br>
+                        <input type="text" placeholder="" id="subject" class="item" name="subject">
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <!--zone de redaction du message-->
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" placeholder="" class="item" name="message" rows="8" cols="22">
+                        </textarea>
+                    </div>
+                    <div class="input-field field" id="but-envoyer">
+                        <button type="submit" class="item">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+
+    <footer class="footer">
+         <!--le pieds de la page avec les informations de contact email, telephone, reseaux sociaux-->
+        <div class="phone">
+            <h3>Telephone</h3>
+            <a href="">081-740-5210</a>
+        </div>
+        <div class="email">
+            <h3>Email</h3>
+            <a href="">davescabana@gmail.com</a>
+        </div>
+        <div class="social_media">
+            <h3>Suivez-moi</h3>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="copy">
+            <h5>&copy; 2024 by David Mukeba</h5>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
