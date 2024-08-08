@@ -548,30 +548,30 @@ button{
 
 /*style appliqué à la page contact*/
 
-.proj-content{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 50px;
-}
+.main{
 
-.proj_titre h1{
-    font-size: 30px;
-}
-
-#proj-presentation{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-
-#proj-presentation p{
-    width: 550px;
-    height: 300px;
+    width: 100%;
+    height: 190vh;
+    padding: 5vh 5vw;
 }
 
 img{
-    height: 400px;
-    width: 400px;
+    width: 40vw;
+    height: 40vh;
+}
+
+p{
+    width: 30%;
+    height: 40vh;
+}
+
+h3{
+    padding: 5% 0;
+}
+.card1{
+
+    display: flex;
+    justify-content: space-between;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
