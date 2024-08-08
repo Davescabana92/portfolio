@@ -3,14 +3,19 @@
 *{
     box-sizing: border-box;
     font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /*l'entete des pages*/
 .header{
+    width: 100vw;
+    height: 7vh;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 70px;
+    padding: 0vw 5vw;
+    
 }
 
 .header .mapersonne{
@@ -42,48 +47,60 @@ a{
 
 .home{
     width: 100%;
-    min-height: 80vh;
+    height: 82vh;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 0;
-    padding: 30px 15% 0;
-    margin: 0%;
+    gap: 5vw;
+    padding: 0 5vw;
+    
 }
+
 .home-content{
-    max-width: 380px;
-    height: auto;
+    width: 65%;
+    height: 75vh;
     line-height: 1.8;
+    padding: 10% 0;
 
 }
 .home-content h3{
     font-size: 20px;
 }
 .home-content h1{
-    font-size: 62px;
-    line-height: 0.3;
+    width: 100%;
+    height: 10vh;
+    font-size: 4rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 3vw;
 }
 
 .home-content span{
     font-weight: bold;
 }
 
-.home-content p{
-    font-size: 15px;
-    margin: 30px 0 30px;
+.home-content #presentation{
+    width: 75%;
+    font-size: 1.1em;
+
 }
 #presentation{
     letter-spacing: 1px;
 }
 .img_box{
-    width: 500px;
-    height: 500px;
-    padding-top: 5%;
-}
-.img_box img{
-    width: 400px;
+    width: 35%;
+    height: 70vh;
     display: flex;
     justify-content: center;
-    height: 400px;
+    align-items: center;
+
+}
+.img_box img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 90%;
     margin: 0 auto;
     border-radius: 50%;
     transition: 0.3s ease;
@@ -99,20 +116,20 @@ a{
 }
 
 .btn_box{
-    width: 400px;
+    width: 75%;
    display: flex;
-   justify-content: space-between;
+   justify-content: left;
    font-size: 17px;
-   margin: 10px;
-   padding: 0;
-   gap: 0;
+   gap: 4vw;
+   padding: 5vh 0;
+
 }
-.btn_box a{
+.btn_box button{
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 0;
-    padding: 0;
+    text-align: center;
+    align-items: center;
     height: 90px;
     width: 90px;
     border-radius: 50%;
@@ -121,17 +138,18 @@ a{
     font: bold;
     font-weight: 1000;
     transition: 0.3s ease;
+
 }
-#curric{
+.btn__yellow{
     background-color: rgb(238, 163, 2);
 }
-#proje{
+.btn__red{
     background-color: rgb(225, 59, 37);
 }
-#contac{
+.btn__blue{
     background-color: rgb(128, 216, 218);
 }
-.btn_box a:hover{
+.btn_box button:hover{
     background-color: rgb(227, 173, 36);
     color: white;
     border: 3px solid black;
@@ -145,12 +163,13 @@ a{
     display: flex;
     justify-content: space-between;
     text-align:center;
+    align-items: center;
     position: relative;
     width: auto;
+    height: 11vh;
     border-top: 1px solid rgb(122, 119, 119);
     margin: 0 10% 0 10%;
-    padding: 0 0 0 0;
-    line-height: 0.9;
+
 }
 
 .email{
@@ -221,6 +240,21 @@ button{
     margin-left: 0;
 }
 
+/*style appliquer au pied de la page contact*/
+
+.footer__contact{
+
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 11vh;
+    border-top: 1px solid rgb(122, 119, 119);
+    margin: 0 10% 0 10%; 
+}
+
 /*style appliqué à la page cv*/
 
 .experience{
@@ -234,10 +268,16 @@ button{
     padding-left: 70px;
     padding-right: 70px;
     margin-bottom: 0px;
+    width: 100%;
+    height: 200vh;
 }
 
 #titre{
     font-size: 25px;
+}
+.experience{
+    width: 100%;
+    height: 40vh;
 }
 
 .experience h2{
@@ -246,8 +286,44 @@ button{
 }
 
 #experience1{
-    line-height: 0.2;
+    line-height: 2em;
+    width: 50%;
+    height: 20vh;
 }
+
+.exp1{
+    display: flex;
+    justify-content: space-between;
+}
+.exp1-period{
+
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+#experience2{
+    line-height: 2em;
+    width: 50%;
+    height: 20vh;
+}
+
+.exp2{
+    display: flex;
+    justify-content: space-between;
+}
+.exp2-period{
+
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*ggggggggggggggggg
 
 .experience #experience1 h3{
     font-size: 18px;
@@ -262,12 +338,15 @@ button{
 .experience #experience1 span{
     position: absolute;
     font-size: 16px;
-    top: 143px;
-    right: 25px;
+    top: 20%;
+    right: 1vw;
 }
 
 #experience2{
-    line-height: 0.2;
+    
+    width: 100%;
+    height: 25vh;
+    line-height: 2em;
 }
 
 .experience #experience2 h3{
@@ -282,15 +361,20 @@ button{
 .experience #experience2 span{
     position: absolute;
     font-size: 16px;
-    top: 213px;
-    right: 25px;
+    top: 65%;
+    right: 1vw;
 }
+
+*/
+
 .education{
     position: relative;
     border-top: 2px solid;
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 25px;
+    width: 100%;
+    height: 60vh;
     
 }
 
@@ -298,6 +382,74 @@ button{
     font-size: 25px;
     padding-left: 10px;
 }
+
+.edu1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+}
+ #education1{
+
+    width: 50%;
+    height: 20vh;
+    line-height: 2em;
+ }
+
+ .edu1-period{
+
+    width: 15%;
+    height: 20vh;
+    display: flex;
+    justify-content: right;
+ }
+
+ .edu2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+}
+ #education2{
+
+    width: 50%;
+    height: 20vh;
+    line-height: 2em;
+ }
+
+ .edu2-period{
+
+    width: 15%;
+    height: 20vh;
+    display: flex;
+    justify-content: right;
+ }
+
+
+ .edu3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+}
+ #education3{
+
+    width: 50%;
+    height: 20vh;
+    line-height: 2em;
+ }
+
+ .edu3-period{
+
+    width: 15%;
+    height: 20vh;
+    display: flex;
+    justify-content: right;
+ }
+
+
+
+/*ggggggggggggggggggg
 
 #education1{
     line-height: 0.2;
@@ -359,6 +511,8 @@ button{
     right: 25px;
 }
 
+*/
+
 .competence{
     position: relative;
     border-top: 2px solid;
@@ -377,6 +531,19 @@ button{
     font-weight: bold;
     margin-top: 25px;
     line-height: 2;
+}
+
+.footer__cv{
+
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items: center;
+    position: relative;
+    width: auto;
+    height: 11vh;
+    border-top: 1px solid rgb(122, 119, 119);
+    margin: 0 10% 0 10%; 
 }
 
 /*style appliqué à la page contact*/
@@ -405,4 +572,587 @@ button{
 img{
     height: 400px;
     width: 400px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        height: 150vh;
+
+
+    }
+
+    .img_box{
+        width: 100%;
+        height: 50%;
+
+    }
+    .img_box img{
+        height: 90%;
+        width: 70%;
+    }
+    .home-content{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+
+    .home-content h1{
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        display: block;
+    
+    }
+
+    .home-content #presentation{
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        padding: 0vw 10vw;
+
+    }
+    .btn_box{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .footer{
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 0;
+        line-height: 30px;
+    }
+
+    /*style contact page*/
+
+    .section_container{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5vh;
+    margin: 0;
+    align-items: center;
+    gap: 0;
+    }
+    .contact__container{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: left;
+        gap: 20px;
+        padding-top: 80px;
+
+    }
+
+    .contact__phone{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contact__mail{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    form{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    form .input-box{
+        display: flex;
+        justify-content: space-between;
+        gap: 10vw;
+        width: 100%;
+    }
+    .field .item{
+
+        width: 37vw;
+    }
+    .field .text-are{
+        width: 37vw;
+        border: solid black 2px;
+    }
+
+    form .input-box1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: right;
+        gap: 10vw;
+
+    }
+    .input-box1 #but-envoyer{
+
+        width: 42%;
+    }
+
+    .footer__contact{
+
+        display: flex;
+        justify-content: space-between;
+        text-align:center;
+        align-items: center;
+        font-size: 2vw;
+    }
+
+    .copy h5{
+
+        font-size: 2vw;
+    }
+
+    /*style appliqué à la page cv*/
+
+.experience{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+#cv_presentation{
+
+    font-size: 2vw;
+}
+
+#titre{
+    font-size: 25px;
+}
+.experience{
+    width: 100%;
+    height: 40vh;
+}
+
+.experience h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#experience1{
+    line-height: 2em;
+    width: 50%;
+    height: 20vh;
+}
+
+.exp1{
+    gap: 5%;
+}
+.exp1-period{
+
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+#experience2{
+    line-height: 2em;
+    width: 50%;
+    height: 20vh;
+}
+
+.exp2{
+    display: flex;
+    justify-content: space-between;
+}
+.exp2-period{
+
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+.education{
+    font-size: 2vw;
+    
+}
+
+.footer__cv{
+
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.copy h5{
+
+    font-size: 2vw;
+}
+
+
+}
+
+@media only screen and (max-width: 600px){
+  
+    .header{
+        width: 100vw;
+        height: 25vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0vw 5vw;
+        font-size: 1.5em;
+        gap: 30px;
+        
+    }
+    .mapersonne{
+        width: 100%;
+        text-align: center;
+    }
+nav{
+    width: 100%;
+}
+.header .menu_list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    }
+
+    .menu_list li{
+
+        width: 40%;
+    }
+
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        height: 200vh;
+        padding-top: 10vw;
+
+
+    }
+
+    .img_box{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+
+    }
+    .img_box img{
+        height: 85%;
+        width: 100%;
+    }
+    .home-content{
+        width: 100%;
+        height: 60%;
+        text-align: center;
+
+    }
+
+    .home-content h1{
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        display: block;
+        font-size: 3em;
+    
+    }
+
+    .home-content #presentation{
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        padding: 0vw 10px;
+        font-size: 1em;
+
+    }
+    .btn_box{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        padding: 10vh 0;
+
+    }
+
+    .btn_box button{
+
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 0;
+        line-height: 30px;
+        margin: 0;
+        padding: 5vh 5vw;
+    }
+
+     /*style contact page*/
+
+     .section_container{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 200vh;
+        padding: 0 5vh;
+        margin: 0;
+        align-items: center;
+        gap: 0;
+        }
+        .contact__container{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+    
+        }
+    
+        .contact__phone{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 25px;
+            width: 100%;
+            align-items: center;
+        }
+    
+        .contact__mail{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+        }
+    
+        form{
+            width: 100%;
+            height: 140vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        form .input-box{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 3vw;
+            width: 100%;
+        }
+        .field .item{
+    
+            width: 80vw;
+        }
+        .field .text-are{
+            width: 80vw;
+            border: solid black 2px;
+        }
+    
+        form .input-box1{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 0px;
+    
+        }
+        .input-box1 #but-envoyer{
+    
+            width: 42%;
+        }
+        .footer__contact{
+
+            width: 100%;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            padding: 2vh 0;
+            line-height: 30px;
+            margin: 0;
+            padding: 5vh 5vw;
+
+
+        }
+
+        /*style appliqué à la page cv*/
+
+.experience{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+#cv_presentation{
+
+    font-size: 3.5vw;
+}
+
+#titre{
+    font-size: 25px;
+}
+.experience{
+    width: 100%;
+    height: 40vh;
+}
+
+.experience h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+#experience1{
+    line-height: 2em;
+    width: 50%;
+    height: 15vh;
+}
+
+.exp1{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    
+}
+.exp1-period{
+
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+}
+
+
+#experience2{
+    line-height: 2em;
+    width: 50%;
+    height: 15vh;
+}
+
+.exp2{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+.exp2-period{
+
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.education{
+    font-size: 3vw;
+    
+}
+
+.edu1{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+#education1{
+
+    width: 100%;
+}
+
+.edu1-period{
+
+    width: 100%;
+}
+
+.edu1-period p{
+
+    width: 100%;
+}
+ 
+
+
+
+
+.edu2{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+#education2{
+
+    width: 100%;
+}
+
+.edu2-period{
+
+    width: 100%;
+}
+
+.edu2-period p{
+
+    width: 100%;
+}
+
+
+
+.edu3{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+#education3{
+
+    width: 100%;
+}
+
+.edu3-period{
+
+    width: 100%;
+}
+
+.edu3-period p{
+
+    width: 100%;
+}
+
 }

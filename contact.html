@@ -21,13 +21,17 @@
         </nav>
     </header>
         <section class="section_container">
-            <div>
+            <div class="contact__container">
                 <!--coordonnées de contact-->
                 <h2>Contact</h2><br>
-                <h4>Telephone</h4>
-                <p>081-740-5210<p>
-                <h4>Email</h4>
-                <p>davescabana@gmail.com</p>
+                <div class="contact__phone">
+                    <h4>Telephone</h4>
+                    <p>081-740-5210<p>
+                </div>
+                <div class="contact__mail">
+                    <h4>Email</h4>
+                    <p>davescabana@gmail.com</p>
+                </div>
             </div>
             <form action="#">
                 <!--formulaire de soumission des requetes et de prise de contact-->
@@ -55,22 +59,22 @@
                         <input type="text" placeholder="" id="subject" class="item" name="subject">
                     </div>
                 </div>
-                <div class="input-box">
+                <div class="input-box1">
                     <div class="input-field field">
                         <!--zone de redaction du message-->
                         <label for="message">Message:</label><br>
-                        <textarea id="message" placeholder="" class="item" name="message" rows="8" cols="22">
+                        <textarea id="message" placeholder="" class="text-are" name="message" rows="8" cols="22">
                         </textarea>
                     </div>
                     <div class="input-field field" id="but-envoyer">
-                        <button type="submit" class="item">Envoyer</button>
+                        <button type="submit" class="btn-env">Envoyer</button>
                     </div>
                 </div>
             </form>
         </section>
 
 
-    <footer class="footer">
+    <footer class="footer__contact">
          <!--le pieds de la page avec les informations de contact email, telephone, reseaux sociaux-->
         <div class="phone">
             <h3>Telephone</h3>
