@@ -47,7 +47,7 @@ a{
 
 .home{
     width: 100%;
-    height: 82vh;
+    /*height: 82vh;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +58,7 @@ a{
 
 .home-content{
     width: 65%;
-    height: 75vh;
+    /*height: 75vh;*/
     line-height: 1.8;
     padding: 10% 0;
 
@@ -90,7 +90,7 @@ a{
 }
 .img_box{
     width: 35%;
-    height: 70vh;
+    /*height: 70vh;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,20 +100,13 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 90%;
+    /*height: 90%;*/
     margin: 0 auto;
     border-radius: 50%;
     transition: 0.3s ease;
     cursor: pointer;
 }
-.img_box img:hover{
-    width: 440px;
-    display: block;
-    height: 440px;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: 5px solid black; 
-}
+
 
 .btn_box{
     width: 75%;
@@ -149,13 +142,7 @@ a{
 .btn__blue{
     background-color: rgb(128, 216, 218);
 }
-.btn_box button:hover{
-    background-color: rgb(227, 173, 36);
-    color: white;
-    border: 3px solid black;
-    width: 120px;
-    height: 120px;
-}
+
 
 /*style appliqués aux pieds des pages*/
 
@@ -166,7 +153,7 @@ a{
     align-items: center;
     position: relative;
     width: auto;
-    height: 11vh;
+    height: 15vh;
     border-top: 1px solid rgb(122, 119, 119);
     margin: 0 10% 0 10%;
 
@@ -191,24 +178,41 @@ i{
 
 .section_container{
     width: 100%;
-    min-height: 80vh;
+    /*min-height: 80vh;*/
     display: flex;
-    align-items: center;
-    gap: 25em;
-    padding: 30px 15% 0;
+    justify-content: space-between;
+    gap: 20em;
+    padding: 100px 5% 100px 15%;
 }
 /*style appliqué au formulaire*/
 
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact__phone{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact__mail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 form{
-    width: 600px;
+    width: 80%;
 }
 
 /*style appliqué aux champs de saisie du formulaire*/
 
 form .input-box{
     display: flex;
-    justify-content: space-between;
-    gap: 0;   
+    justify-content: center;
+    gap: 30px;   
 }
 .field .item{
     padding: 5px;
@@ -219,6 +223,22 @@ form .input-box{
     margin: 11px 0;
 
 }
+form .input-box1{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.field .text-are{
+    padding: 5px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    margin: 11px 0;
+
+}
+
 
 /*style appliqué au bouton envoyer*/
 
@@ -269,15 +289,16 @@ button{
     padding-right: 70px;
     margin-bottom: 0px;
     width: 100%;
-    height: 200vh;
+    /*height: 200vh;*/
 }
 
 #titre{
     font-size: 25px;
+    padding-top: 70px;
 }
 .experience{
     width: 100%;
-    height: 40vh;
+    /*height: 40vh;*/
 }
 
 .experience h2{
@@ -288,17 +309,18 @@ button{
 #experience1{
     line-height: 2em;
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
 }
 
 .exp1{
     display: flex;
     justify-content: space-between;
+    padding: 30px 0;
 }
 .exp1-period{
 
     width: 40%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: center;
 }
@@ -307,7 +329,7 @@ button{
 #experience2{
     line-height: 2em;
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
 }
 
 .exp2{
@@ -317,7 +339,7 @@ button{
 .exp2-period{
 
     width: 20%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: center;
 }
@@ -374,7 +396,7 @@ button{
     margin-bottom: 50px;
     padding-top: 25px;
     width: 100%;
-    height: 60vh;
+    /*height: 60vh;*/
     
 }
 
@@ -387,42 +409,46 @@ button{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 20vh;
+    /*height: 20vh;*/
+    padding: 15px 0;
 }
  #education1{
 
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
     line-height: 2em;
  }
 
  .edu1-period{
 
     width: 15%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: right;
+    align-items: center;
  }
 
  .edu2{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 20vh;
+    /*height: 20vh;*/
+    padding: 15px 0;
 }
  #education2{
 
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
     line-height: 2em;
  }
 
  .edu2-period{
 
     width: 15%;
-    height: 20vh;
+   /* height: 20vh;*/
     display: flex;
     justify-content: right;
+    align-items: center;
  }
 
 
@@ -430,21 +456,23 @@ button{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 20vh;
+    /*height: 20vh;*/
+    padding: 15px 0;
 }
  #education3{
 
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
     line-height: 2em;
  }
 
  .edu3-period{
 
     width: 15%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: right;
+    align-items: center;
  }
 
 
@@ -530,7 +558,28 @@ button{
     font-size: 16px;
     font-weight: bold;
     margin-top: 25px;
-    line-height: 2;
+    line-height: 2.5;
+}
+
+
+.language{
+    position: relative;
+    border-top: 2px solid;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    
+}
+.language h2{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.language ul{
+   
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    line-height: 2.5;
 }
 
 .footer__cv{
@@ -551,22 +600,28 @@ button{
 .main{
 
     width: 100%;
-    height: 190vh;
+    /*height: 190vh;*/
     padding: 5vh 5vw;
 }
 
 .card__img{
-    width: 40vw;
-    height: 40vh;
+    width: 30vw;
+    /*height: 40vh;*/
 }
 
 .card__text{
-    width: 30%;
-    height: 40vh;
+    width: 25vw;
+    line-height: 1.7;
+    text-align: justify;
+    /*height: 40vh;*/
 }
 
 .project__tittle{
-    padding: 5% 0;
+    padding-top: 60px;
+}
+
+.project__tittle h3{
+    padding-bottom: 20px;
 }
 .card{
 
@@ -596,6 +651,7 @@ button{
         flex-direction: column;
         gap: 0;
         width: 100%;
+        padding-top: 20vh;
         /*height: 150vh;*/
 
 
@@ -607,8 +663,9 @@ button{
 
     }
     .img_box img{
-        height: 90%;
-        width: 70%;
+       /* height: 90%;*/
+       height: 400px;
+        width: 400px;
     }
     .home-content{
         width: 100%;
@@ -626,14 +683,14 @@ button{
 
     .home-content #presentation{
         width: 100%;
-        height: 25%;
+        /*height: 25%;*/
         text-align: center;
         padding: 0vw 10vw;
 
     }
     .btn_box{
         width: 100%;
-        height: 40%;
+       /* height: 40%;*/
         display: flex;
         justify-content: center;
 
@@ -641,7 +698,7 @@ button{
 
     .footer{
         width: 80%;
-        /*height: 50vh;*/
+        height: 50vh;
         display: flex;
         flex-direction: column;
         padding: 5vh 0;
@@ -656,15 +713,15 @@ button{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
-    padding: 0 5vh;
+    /*height: 100vh;*/
+    padding: 60px 5vh;
     margin: 0;
     align-items: center;
-    gap: 0;
+    gap: 50px;
     }
     .contact__container{
         width: 100%;
-        height: 50vh;
+        /*height: 50vh;*/
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -690,7 +747,7 @@ button{
 
     form{
         width: 100%;
-        height: 50vh;
+        /*height: 50vh;*/
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -698,25 +755,25 @@ button{
 
     form .input-box{
         display: flex;
-        justify-content: space-between;
-        gap: 10vw;
+        justify-content: center;
+        gap: 5vw;
         width: 100%;
     }
     .field .item{
 
-        width: 37vw;
+        width: 44vw;
     }
     .field .text-are{
-        width: 37vw;
+        width: 44vw;
         border: solid black 2px;
     }
 
     form .input-box1{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         align-items: right;
-        gap: 10vw;
+        gap: 5vw;
 
     }
     .input-box1 #but-envoyer{
@@ -757,7 +814,7 @@ button{
 }
 .experience{
     width: 100%;
-    height: 40vh;
+    /*height: 40vh;*/
 }
 
 .experience h2{
@@ -768,7 +825,7 @@ button{
 #experience1{
     line-height: 2em;
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
 }
 
 .exp1{
@@ -777,7 +834,7 @@ button{
 .exp1-period{
 
     width: 40%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: center;
 }
@@ -786,7 +843,7 @@ button{
 #experience2{
     line-height: 2em;
     width: 50%;
-    height: 20vh;
+    /*height: 20vh;*/
 }
 
 .exp2{
@@ -796,7 +853,7 @@ button{
 .exp2-period{
 
     width: 30%;
-    height: 20vh;
+    /*height: 20vh;*/
     display: flex;
     justify-content: center;
 }
@@ -817,11 +874,12 @@ button{
     height: 11vh;
     border-top: 1px solid rgb(122, 119, 119);
     margin: 0 10% 0 10%;
+    font-size: 1.9vw;
 }
 
 .copy h5{
 
-    font-size: 2vw;
+    font-size: 1.6vw;
 }
 
 /*style appliqué à la page projet*/
@@ -829,23 +887,27 @@ button{
 .main{
 
     width: 100%;
-    height: 140vh;
+    /*height: 140vh;*/
     padding: 5vh 5vw;
 }
 
 .card__img{
-    width: 50vw;
-    height: 25vh;
+    width: 45vw;
+    /*height: 25vh;*/
 }
 
 .card__text{
-    width: 40%;
-    height: 30vh;
+    width: 45%;
+    /*height: 30vh;*/
     font-size: 2.2vw;
 }
 
 .project__tittle{
-    padding: 5% 0;
+    padding-top: 60px;
+}
+
+.project__tittle h3{
+    padding-bottom: 20px;
 }
 .card{
 
@@ -864,6 +926,7 @@ button{
     height: 11vh;
     border-top: 1px solid rgb(122, 119, 119);
     margin: 0 10% 0 10%;
+    font-size: 1.9vw;
 }
 
 
@@ -879,7 +942,6 @@ button{
         justify-content: center;
         flex-direction: column;
         padding: 0vw 5vw;
-        font-size: 1.5em;
         gap: 30px;
         
     }
@@ -899,7 +961,7 @@ nav{
 
     .menu_list li{
 
-        width: 40%;
+        width: 20%;
     }
 
     .home{
@@ -909,15 +971,15 @@ nav{
         flex-direction: column;
         gap: 0;
         width: 100%;
-        height: 200vh;
-        padding-top: 10vw;
+       /* height: 200vh;*/
+        padding-top: 15vh;
 
 
     }
 
     .img_box{
         width: 100%;
-        height: 50%;
+        /*height: 50%;*/
         align-items: center;
         display: flex;
         justify-content: center;
@@ -925,8 +987,8 @@ nav{
 
     }
     .img_box img{
-        height: 85%;
-        width: 100%;
+        height: 350px;
+        width: 350px;
     }
     .home-content{
         width: 100%;
@@ -986,15 +1048,15 @@ nav{
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        height: 200vh;
-        padding: 0 5vh;
+       /* height: 200vh*/
+        padding: 70px 5vh;
         margin: 0;
         align-items: center;
-        gap: 0;
+        gap: 50px;
         }
         .contact__container{
             width: 100%;
-            height: 60vh;
+            /*height: 60vh;*/
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -1023,7 +1085,7 @@ nav{
     
         form{
             width: 100%;
-            height: 140vh;
+            /*height: 140vh;*/
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -1057,18 +1119,24 @@ nav{
         }
         .input-box1 #but-envoyer{
     
-            width: 42%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            width: 100%;
         }
         .footer__contact{
 
             width: 100%;
-            height: 40vh;
+            /*height: 40vh;*/
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
             padding: 2vh 0;
             line-height: 30px;
             margin: 0;
             padding: 5vh 5vw;
+            gap: 30px;
+            font-size: 2.9vw;
 
 
         }
@@ -1084,38 +1152,45 @@ nav{
 
 #cv_presentation{
 
-    font-size: 3.5vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 3vw;
 }
 
 #titre{
     font-size: 25px;
+    text-align: left;
 }
 .experience{
     width: 100%;
-    height: 40vh;
+    /*height: 40vh;*/
 }
 
 .experience h2{
     font-size: 25px;
-    padding-left: 10px;
+    text-align: left;
 }
 
 #experience1{
     line-height: 2em;
-    width: 50%;
-    height: 15vh;
+    width: 100%;
+    /*height: 15vh;*/
+    text-align: left;
 }
 
 .exp1{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
+    align-items: left;
+    width: 100%;
+    font-size: 3.3vw;
     
 }
 .exp1-period{
 
-    width: 40%;
-    height: 10vh;
+    width: 100%;
+    /*height: 10vh;*/
     display: flex;
     justify-content: right;
 }
@@ -1123,42 +1198,50 @@ nav{
 
 #experience2{
     line-height: 2em;
-    width: 50%;
-    height: 15vh;
+    width: 100%;
+    /*height: 15vh;*/
 }
 
 .exp2{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
+    align-items: left;
+    font-size: 3.3vw;
 }
 .exp2-period{
 
-    width: 50%;
-    height: 15vh;
+    width: 100%;
+    /*height: 15vh;*/
     display: flex;
     justify-content: center;
 }
 
 .education{
     font-size: 3vw;
+    text-align: left;
+
     
 }
 
 .edu1{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
+    align-items: left;
+    font-size: 3.3vw;
 }
 
 #education1{
 
     width: 100%;
+    text-align: left;
 }
 
 .edu1-period{
 
     width: 100%;
+    text-align: left;
 }
 
 .edu1-period p{
@@ -1172,17 +1255,20 @@ nav{
 
 .edu2{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
+    align-items: left;
 }
 
 #education2{
 
     width: 100%;
+    text-align: left;
 }
 
 .edu2-period{
 
+    text-align: left;
     width: 100%;
 }
 
@@ -1195,23 +1281,38 @@ nav{
 
 .edu3{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: column;
+    align-items: left;
+
 }
 
 #education3{
-
+    
+    text-align: left;
     width: 100%;
 }
 
 .edu3-period{
 
     width: 100%;
+    text-align: left;
 }
 
 .edu3-period p{
 
     width: 100%;
+}
+
+.competence ul{
+    text-align: left;
+    font-size: 3.3vw;
+}
+
+.language ul{
+
+    text-align: left;
+    font-size: 3.3vw;
 }
 .footer__cv{
     width: 100%;
@@ -1222,6 +1323,7 @@ nav{
     line-height: 30px;
     margin: 0;
     padding: 5vh 5vw;
+    font-size: 2.5vw;
 }
 
 /*style appliqué à la page projet*/
@@ -1229,22 +1331,25 @@ nav{
 .main{
 
     width: 100%;
-    height: 140vh;
+    /*height: 140vh;*/
     padding: 5vh 5vw;
 }
 .tittle__page h1{
     text-align: center;
 }
 
+
 .card__img{
     width: 100%;
-    height: 25vh;
+    /*height: 25vh;*/
+    order: 1;
 }
 
 .card__text{
     width: 100%;
-    height: 10vh;
-    font-size: 2.2vw;
+    /*height: 10vh;*/
+    font-size: 2.7vw;
+    order: 2;
 }
 
 .project__tittle{
@@ -1256,6 +1361,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
 
 }
 
@@ -1264,14 +1370,19 @@ nav{
     height: 55vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 2vh 0;
     line-height: 30px;
     margin: 0;
     padding: 5vh 5vw;
+    font-size: 2.9vw;
 
-    
+}
+
+.copy h5{
+    width: 100%;
+    font-size: 2.9vw;
 }
 
 }
