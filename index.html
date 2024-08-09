@@ -10,63 +10,63 @@
 <body>
     <header class="header">
         <!--l'entete de la page avec logo et menu-->
-        <div class="mapersonne">David MUKEBA</div>
+        <div class="logo">David MUKEBA</div>
         <nav>
             <!--le menu de navigation-->
-            <ul class="menu_list">
-                <li class="cv"><a href="cv.html" target="_blank">CV</a></li>
-                <li class="projets"><a href="projets.html" target="_blank">Projets</a></li>
-                <li class="contact"><a href="contact.html" target="_blank">Contact</a></li>
+            <ul class="menu__list">
+                <li class="menu__list-cv"><a href="cv.html" target="_blank">CV</a></li>
+                <li class="menu__list-project"><a href="projets.html" target="_blank">Projets</a></li>
+                <li class="menu__list-contact"><a href="contact.html" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section class="home">
-        <div class="img_box">
+        <div class="image__container">
             <!--le conteneur de la photo-->
-            <img src="ressources/photo_1.jpg" alt="La photo de David">
+            <img class="image__container-img" src="ressources/photo_1.jpg" alt="La photo de David">
         </div>
-        <div class="home-content">
+        <div class="profil__description">
             <!--le conteneur du texte descriptif-->
-            <div>
-                <h1>Salut !</h1>
+            <div class="profil__description-text">
+                <h1 class="profil__description-text-h1">Salut !</h1>
             </div>
-            <div>
-                <h3>A propos de moi</h3>
+            <div class="profil__description-text">
+                <h3 class="profil__description-text-h3">A propos de moi</h3>
             </div>
-            <div>
-                <p id="presentation">je suis <span>David Mukeba</span>
+            <div class="profil__description-text">
+                <p class="profil__description-text-p">je suis <span>David Mukeba</span>
             , un developpeur fullstack passionné 
             doté d'une créativité debordante et 
             d'un talent pour concretiser 
             vos idées en experiences numeriques 
             interactives.</p>
             </div>
-            <div class="btn_box">
+            <div class="profil__button__container">
                 <!--le bouton de navigation pour acceder à la partie cv, projet, contact-->
-                <button class="btn__yellow"><a href="cv.html" target="_blank" id="curric"><p>Cv</p></a></button>
-                <button class="btn__red"><a href="projets.html" id="proje" target="_blank"><p>Projets</p></a></button>
-                <button class="btn__blue"><a href="contact.html" id="contac" target="_blank"><p>contact</p></a></button>
+                <button class="profil__button-button-cv"><a href="cv.html" target="_blank" id="curric"><p>Cv</p></a></button>
+                <button class="profil__button-button-project"><a href="projets.html" id="proje" target="_blank"><p>Projets</p></a></button>
+                <button class="profil__button-button-contact"><a href="contact.html" id="contac" target="_blank"><p>contact</p></a></button>
             </div>      
             
         </div>
     </section>
-    <footer class="footer">
+    <footer class="profil__contact__container">
         <!--le pieds de la page avec les informations de contact email, telephone, reseaux sociaux-->
-        <div class="phone">
+        <div class="profil__contact-phone">
             <h3>Telephone</h3>
             <a href="">081-740-5210</a>
         </div>
-        <div class="email">
+        <div class="profil__contact-email">
             <h3>Email</h3>
             <a href="">davescabana@gmail.com</a>
         </div>
-        <div class="social_media">
+        <div class="profil__contact-social-media">
             <h3>Suivez-moi</h3>
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
             <a href=""><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <div class="copy">
+        <div class="copyright">
             <h5>&copy; 2024 by David Mukeba</h5>
         </div>
 

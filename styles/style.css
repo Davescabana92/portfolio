@@ -18,10 +18,10 @@
     
 }
 
-.header .mapersonne{
+.header .logo{
     font-weight: bold;
 }
-.header .menu_list{
+.header .menu__list{
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -29,7 +29,7 @@
     padding: 0;
     
 }
-.menu_list li{
+.menu__list li{
     width: 100px;
     text-align: center;
     color: black;
@@ -38,8 +38,8 @@
 a{
     text-decoration: none;
 }
-.projets,
-.contact{
+.menu__list-project,
+.menu__list-contact{
     border-left: 1px solid black;
     
 }
@@ -56,17 +56,17 @@ a{
     
 }
 
-.home-content{
+.profil__description{
     width: 65%;
     /*height: 75vh;*/
     line-height: 1.8;
     padding: 10% 0;
 
 }
-.home-content h3{
+.profil__description .profil__description-text-h3{
     font-size: 20px;
 }
-.home-content h1{
+.profil__description .profil__description-text-h1{
     width: 100%;
     height: 10vh;
     font-size: 4rem;
@@ -76,19 +76,19 @@ a{
     padding-bottom: 3vw;
 }
 
-.home-content span{
+.profil__description span{
     font-weight: bold;
 }
 
-.home-content #presentation{
+.profil__description .profil__description-text-p{
     width: 75%;
     font-size: 1.1em;
 
 }
-#presentation{
+.profil__description-text-p{
     letter-spacing: 1px;
 }
-.img_box{
+.image__container{
     width: 35%;
     /*height: 70vh;*/
     display: flex;
@@ -96,7 +96,7 @@ a{
     align-items: center;
 
 }
-.img_box img{
+.image__container-img{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ a{
 }
 
 
-.btn_box{
+.profil__button__container{
     width: 75%;
    display: flex;
    justify-content: left;
@@ -117,7 +117,7 @@ a{
    padding: 5vh 0;
 
 }
-.btn_box button{
+.profil__button__container button{
     display: flex;
     justify-content: center;
     list-style: none;
@@ -133,20 +133,20 @@ a{
     transition: 0.3s ease;
 
 }
-.btn__yellow{
+.profil__button-button-cv{
     background-color: rgb(238, 163, 2);
 }
-.btn__red{
+.profil__button-button-project{
     background-color: rgb(225, 59, 37);
 }
-.btn__blue{
+.profil__button-button-contact{
     background-color: rgb(128, 216, 218);
 }
 
 
 /*style appliqués aux pieds des pages*/
 
-.footer{
+.profil__contact__container{
     display: flex;
     justify-content: space-between;
     text-align:center;
@@ -159,15 +159,15 @@ a{
 
 }
 
-.email{
+.profil__contact-email{
     color: black;
 }
 
-.copy h5{
+.copyright h5{
     font-size: 15px;
 }
 
-.social_media a{
+.profil__conctact-social-media a{
     margin: 5px;
 }
 i{
@@ -176,7 +176,7 @@ i{
 
 /*style apliqué au corps de la page contact*/
 
-.section_container{
+.main{
     width: 100%;
     /*min-height: 80vh;*/
     display: flex;
@@ -620,7 +620,7 @@ button{
     padding-top: 60px;
 }
 
-.project__tittle h3{
+.project__tittle .h3{
     padding-bottom: 20px;
 }
 .card{
@@ -657,23 +657,23 @@ button{
 
     }
 
-    .img_box{
+    .image__container{
         width: 100%;
         height: 50%;
 
     }
-    .img_box img{
+    .image__container-img{
        /* height: 90%;*/
        height: 400px;
         width: 400px;
     }
-    .home-content{
+    .profil__description{
         width: 100%;
         height: 50%;
         text-align: center;
     }
 
-    .home-content h1{
+    .profil__description .profil__description-text-h1{
         width: 100%;
         height: 25%;
         text-align: center;
@@ -681,14 +681,14 @@ button{
     
     }
 
-    .home-content #presentation{
+    .profil__description .profil__description-text-p{
         width: 100%;
         /*height: 25%;*/
         text-align: center;
         padding: 0vw 10vw;
 
     }
-    .btn_box{
+    .profil__button__container{
         width: 100%;
        /* height: 40%;*/
         display: flex;
@@ -696,7 +696,7 @@ button{
 
     }
 
-    .footer{
+    .profil__contact__container{
         width: 80%;
         height: 50vh;
         display: flex;
@@ -707,7 +707,7 @@ button{
 
     /*style contact page*/
 
-    .section_container{
+    .main{
 
     display: flex;
     justify-content: center;
@@ -790,7 +790,7 @@ button{
         font-size: 2vw;
     }
 
-    .copy h5{
+    .copyright h5{
 
         font-size: 2vw;
     }
@@ -877,7 +877,7 @@ button{
     font-size: 1.9vw;
 }
 
-.copy h5{
+.copyright h5{
 
     font-size: 1.6vw;
 }
@@ -945,21 +945,21 @@ button{
         gap: 30px;
         
     }
-    .mapersonne{
+    .logo{
         width: 100%;
         text-align: center;
     }
 nav{
     width: 100%;
 }
-.header .menu_list{
+.header .menu__list{
     width: 100%;
     display: flex;
     justify-content: center;
 
     }
 
-    .menu_list li{
+    .menu__list li{
 
         width: 20%;
     }
@@ -977,7 +977,7 @@ nav{
 
     }
 
-    .img_box{
+    .image__container{
         width: 100%;
         /*height: 50%;*/
         align-items: center;
@@ -986,18 +986,18 @@ nav{
 
 
     }
-    .img_box img{
+    .image__container-img{
         height: 350px;
         width: 350px;
     }
-    .home-content{
+    .profil__description{
         width: 100%;
         height: 60%;
         text-align: center;
 
     }
 
-    .home-content h1{
+    .profil__description .profil__description-text-h1{
         width: 100%;
         height: 20%;
         text-align: center;
@@ -1006,7 +1006,7 @@ nav{
     
     }
 
-    .home-content #presentation{
+    .profil__description .profil__description-text-p{
         width: 100%;
         height: 25%;
         text-align: center;
@@ -1014,7 +1014,7 @@ nav{
         font-size: 1em;
 
     }
-    .btn_box{
+    .profil__button__container{
         width: 100%;
         height: 30%;
         display: flex;
@@ -1023,13 +1023,13 @@ nav{
 
     }
 
-    .btn_box button{
+    .profil__button__container button{
 
         width: 75px;
         height: 75px;
     }
 
-    .footer{
+    .profil__contact__container{
         width: 100%;
         height: 55vh;
         display: flex;
@@ -1042,7 +1042,7 @@ nav{
 
      /*style contact page*/
 
-     .section_container{
+     .main{
 
         display: flex;
         justify-content: center;
@@ -1380,7 +1380,7 @@ nav{
 
 }
 
-.copy h5{
+.copyright h5{
     width: 100%;
     font-size: 2.9vw;
 }
