@@ -203,13 +203,13 @@ i{
     gap: 10px;
 }
 
-form{
+.form__container{
     width: 80%;
 }
 
 /*style appliqué aux champs de saisie du formulaire*/
 
-form .input-box{
+.form__container .input-box{
     display: flex;
     justify-content: center;
     gap: 30px;   
@@ -223,7 +223,7 @@ form .input-box{
     margin: 11px 0;
 
 }
-form .input-box1{
+.form__container .input-box1{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -262,7 +262,7 @@ button{
 
 /*style appliquer au pied de la page contact*/
 
-.footer__contact{
+.footer__contact__container{
 
     display: flex;
     justify-content: space-between;
@@ -284,7 +284,7 @@ button{
     padding-top: 25px;
 }
 
-#cv_presentation{
+.curriculum__container{
     padding-left: 70px;
     padding-right: 70px;
     margin-bottom: 0px;
@@ -292,7 +292,7 @@ button{
     /*height: 200vh;*/
 }
 
-#titre{
+.curriculum__tittle{
     font-size: 25px;
     padding-top: 70px;
 }
@@ -338,7 +338,7 @@ button{
 }
 .exp2-period{
 
-    width: 20%;
+    width: 40%;
     /*height: 20vh;*/
     display: flex;
     justify-content: center;
@@ -582,7 +582,7 @@ button{
     line-height: 2.5;
 }
 
-.footer__cv{
+.footer__cv__container{
 
     display: flex;
     justify-content: space-between;
@@ -597,7 +597,7 @@ button{
 
 /*style appliqué à la page projet*/
 
-.main{
+.project__home{
 
     width: 100%;
     /*height: 190vh;*/
@@ -620,7 +620,7 @@ button{
     padding-top: 60px;
 }
 
-.project__tittle .h3{
+.project__tittle h3{
     padding-bottom: 20px;
 }
 .card{
@@ -628,7 +628,7 @@ button{
     display: flex;
     justify-content: space-between;
 }
-.footer__project{
+.footer__project__container{
     display: flex;
     justify-content: space-between;
     text-align:center;
@@ -745,7 +745,7 @@ button{
         gap: 25px;
     }
 
-    form{
+    .form__container{
         width: 100%;
         /*height: 50vh;*/
         display: flex;
@@ -753,7 +753,7 @@ button{
         flex-direction: column;
     }
 
-    form .input-box{
+    .form__container .form__input-box{
         display: flex;
         justify-content: center;
         gap: 5vw;
@@ -766,14 +766,15 @@ button{
     .field .text-are{
         width: 44vw;
         border: solid black 2px;
+
     }
 
-    form .input-box1{
+    .form__container .input-box1{
         width: 100%;
         display: flex;
-        justify-content: left;
+        justify-content: flex-start;
         align-items: right;
-        gap: 5vw;
+        gap: 3vw;
 
     }
     .input-box1 #but-envoyer{
@@ -781,7 +782,7 @@ button{
         width: 42%;
     }
 
-    .footer__contact{
+    .footer__contact__container{
 
         display: flex;
         justify-content: space-between;
@@ -804,12 +805,12 @@ button{
     padding-top: 25px;
 }
 
-#cv_presentation{
+.curriculum__container{
 
     font-size: 2vw;
 }
 
-#titre{
+.curriculum__tittle{
     font-size: 25px;
 }
 .experience{
@@ -863,7 +864,7 @@ button{
     
 }
 
-.footer__cv{
+.footer__cv__container{
 
     display: flex;
     justify-content: space-between;
@@ -915,7 +916,7 @@ button{
     justify-content: space-between;
 
 }
-.footer__project{
+.footer__project__container{
 
     display: flex;
     justify-content: space-between;
@@ -1083,7 +1084,7 @@ nav{
             width: 100%;
         }
     
-        form{
+        .form__container{
             width: 100%;
             /*height: 140vh;*/
             display: flex;
@@ -1091,7 +1092,7 @@ nav{
             flex-direction: column;
         }
     
-        form .input-box{
+        .form__container .input-box{
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -1108,7 +1109,7 @@ nav{
             border: solid black 2px;
         }
     
-        form .input-box1{
+        .form__container .input-box1{
             width: 100%;
             display: flex;
             justify-content: center;
@@ -1124,7 +1125,7 @@ nav{
            align-items: center;
             width: 100%;
         }
-        .footer__contact{
+        .footer__contact__container{
 
             width: 100%;
             /*height: 40vh;*/
@@ -1150,14 +1151,14 @@ nav{
     padding-top: 25px;
 }
 
-#cv_presentation{
+.curriculum__container{
 
     padding-left: 30px;
     padding-right: 30px;
     font-size: 3vw;
 }
 
-#titre{
+.curriculum__tittle{
     font-size: 25px;
     text-align: left;
 }
@@ -1214,7 +1215,7 @@ nav{
     width: 100%;
     /*height: 15vh;*/
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .education{
@@ -1314,7 +1315,7 @@ nav{
     text-align: left;
     font-size: 3.3vw;
 }
-.footer__cv{
+.footer__cv__container{
     width: 100%;
     height: 55vh;
     display: flex;
@@ -1365,7 +1366,7 @@ nav{
 
 }
 
-.footer__project{
+.footer__project__container{
     width: 100%;
     height: 55vh;
     display: flex;
